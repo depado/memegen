@@ -42,7 +42,6 @@ steps:
 
       `{{truncate commit.sha 8}}`: "{{commit.message}}"
 
-
 volumes:
 - name: deps
   host:
