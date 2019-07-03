@@ -29,7 +29,7 @@ snapshot: ## Create a new snapshot release
 
 .PHONY: test
 test: ## Run the test suite
-	go test -race -coverprofile="coverage.txt" ./...
+	CGO_ENABLED=1 go test -race -coverprofile="coverage.txt" ./...
 
 .PHONY: clean
 clean: ## Remove the binary
