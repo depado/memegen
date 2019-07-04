@@ -19,7 +19,7 @@ var (
 // Main command that will be run when no other command is provided on the
 // command-line
 var rootCmd = &cobra.Command{
-	Use:  "memegen <picture> [options]",
+	Use:  "memegen <picture>",
 	Args: cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		err := generator.Generate(
@@ -29,6 +29,7 @@ var rootCmd = &cobra.Command{
 			viper.GetString("font.path"),
 			viper.GetString("output"),
 			viper.GetFloat64("font.size"),
+			viper.GetInt("font.outline"),
 		)
 		if err != nil {
 			logrus.WithError(err).Fatal("Unable to generate meme")

@@ -8,7 +8,7 @@ import (
 )
 
 // Generate generates the meme
-func Generate(path, top, bottom, fontpath, output string, fontsize float64) error {
+func Generate(path, top, bottom, fontpath, output string, fontsize float64, outline int) error {
 	var err error
 	var im image.Image
 
@@ -27,10 +27,10 @@ func Generate(path, top, bottom, fontpath, output string, fontsize float64) erro
 
 	// Write meme texts
 	if top != "" {
-		writeMemeText(dc, top, dimx, dimy, false)
+		writeMemeText(dc, top, dimx, dimy, outline, false)
 	}
 	if bottom != "" {
-		writeMemeText(dc, bottom, dimx, dimy, true)
+		writeMemeText(dc, bottom, dimx, dimy, outline, true)
 	}
 
 	// Save meme to output
@@ -40,7 +40,7 @@ func Generate(path, top, bottom, fontpath, output string, fontsize float64) erro
 	return nil
 }
 
-func writeMemeText(dc *gg.Context, s string, fx, fy float64, down bool) {
+func writeMemeText(dc *gg.Context, s string, fx, fy float64, outline int, down bool) {
 	_, h := dc.MeasureString(s)
 	wrapped := dc.WordWrap(s, fy)
 	top := float64(len(wrapped)) * h
@@ -49,10 +49,9 @@ func writeMemeText(dc *gg.Context, s string, fx, fy float64, down bool) {
 	}
 
 	dc.SetRGB(0, 0, 0)
-	n := 4
-	for dy := -n; dy <= n; dy++ {
-		for dx := -n; dx <= n; dx++ {
-			if dx*dx+dy*dy >= n*n {
+	for dy := -outline; dy <= outline; dy++ {
+		for dx := -outline; dx <= outline; dx++ {
+			if dx*dx+dy*dy >= outline*outline {
 				continue
 			}
 			x := fx/2 + float64(dx)
