@@ -5,9 +5,9 @@
 
   ![Go Version](https://img.shields.io/badge/Go%20Version-latest-brightgreen.svg)
   [![Go Report Card](https://goreportcard.com/badge/github.com/depado/memegen)](https://goreportcard.com/report/github.com/depado/memegen)
-  [![Build Status](https://drone.depa.do/api/badges/Depado/memegen/status.svg)](https://drone.depa.do/Depado/memegen)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/depado/memegen/blob/master/LICENSE)
   [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/Depado)
+
 </h2>
 
 <h2 align="center">Very Simple Meme Generator</h2>
@@ -54,6 +54,6 @@ Use "memegen [command] --help" for more information about a command.
 ```
 
 In order for this to work, you'll need to download fonts or specify the path
-of the `.ttf` font you wish to use (that is installed on your system). For 
-example you can create the `fonts/` directory and 
-[download the `impact` font](https://www.wfonts.com/font/impact) in it. 
+of the `.ttf` font you wish to use (that is installed on your system). For
+example you can create the `fonts/` directory and
+[download the `impact` font](https://www.wfonts.com/font/impact) in it.
