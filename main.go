@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/Depado/memegen/cmd"
-	"github.com/Depado/memegen/generator"
+	"github.com/depado/memegen/cmd"
+	"github.com/depado/memegen/generator"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"

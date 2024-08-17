@@ -4,9 +4,9 @@
   [![forthebadge](https://forthebadge.com/images/badges/made-with-go.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
 
   ![Go Version](https://img.shields.io/badge/Go%20Version-latest-brightgreen.svg)
-  [![Go Report Card](https://goreportcard.com/badge/github.com/Depado/memegen)](https://goreportcard.com/report/github.com/Depado/memegen)
+  [![Go Report Card](https://goreportcard.com/badge/github.com/depado/memegen)](https://goreportcard.com/report/github.com/depado/memegen)
   [![Build Status](https://drone.depa.do/api/badges/Depado/memegen/status.svg)](https://drone.depa.do/Depado/memegen)
-  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Depado/memegen/blob/master/LICENSE)
+  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/depado/memegen/blob/master/LICENSE)
   [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/Depado)
 </h2>
 
@@ -21,11 +21,11 @@ mostly.
 
 ## Install
 
-Grab the latest binary on the [releases page](https://github.com/Depado/memegen/releases)
+Grab the latest binary on the [releases page](https://github.com/depado/memegen/releases)
 or install it from source:
 
 ```sh
-$ go get -u github.com/Depado/memegen
+$ go get -u github.com/depado/memegen
 ```
 
 Note: This project uses go modules

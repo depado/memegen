@@ -25,7 +25,7 @@ release: ## Create a new release on Github
 
 .PHONY: snapshot
 snapshot: ## Create a new snapshot release
-	goreleaser --snapshot --rm-dist
+	goreleaser --snapshot --clean
 
 .PHONY: test
 test: ## Run the test suite
